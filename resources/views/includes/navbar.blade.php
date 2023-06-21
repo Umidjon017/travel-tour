@@ -13,6 +13,7 @@
                 <a href="{{ url('#home') }}" class="nav-item nav-link active"> {{ __('Home') }} </a>
                 <a href="{{ url('#about') }}" class="nav-item nav-link"> {{ __('About') }} </a>
                 <a href="{{ url('#service') }}" class="nav-item nav-link"> {{ __('Services') }} </a>
+                <a href="{{ url('#destination') }}" class="nav-item nav-link"> {{ __('Destinations') }} </a>
                 <a href="{{ url('#package') }}" class="nav-item nav-link"> {{ __('Packages') }} </a>
                 <a href="{{ url('#contact-us') }}" class="nav-item nav-link">Contact</a>
             </div>
