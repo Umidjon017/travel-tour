@@ -22,6 +22,22 @@
 
     <div class="container-fluid bg-primary py-5 mb-5 hero-header">
         <div class="container py-5">
+            <div class="row justify-content-end py-5">
+                @if (Session::has('success'))
+                    <div class="alert alert-success justify-content-end w-25">
+                        <div class="alert-body">
+                            <i class="icon fas fa-check"></i>
+                            {{session('success')}}
+                        </div>
+                    </div>
+                @endif
+                @if (Session::has('warning'))
+                    <div class="alert alert-danger justify-content-end w-25">
+                        <i class="icon fas fa-ban"></i>
+                        {{session('warning')}}
+                    </div>
+                @endif
+            </div>
             <div class="row justify-content-center py-5">
                 <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Enjoy Your Vacation With Us</h1>

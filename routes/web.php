@@ -3,6 +3,7 @@
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LocaleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::resource('/', HomeController::class);
 Route::resource('/booking', BookController::class);
 Route::resource('/contact', ContactUsController::class);
-
+Route::get('setLocale/{locale}', [LocaleController::class, 'setLocale'])->name('setLocale');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

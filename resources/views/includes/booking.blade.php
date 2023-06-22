@@ -1,24 +1,6 @@
 <!-- Booking Start -->
 <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
     <div class="container">
-        @if (Session::has('success'))
-            <div class="alert alert-success alert-dismissible show fade">
-                <div class="alert-body">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
-                        <span>&times;</span>
-                    </button>
-                    <h5><i class="icon fas fa-check"></i></h5>
-                    {{session('success')}}
-                </div>
-            </div>
-        @endif
-        @if (Session::has('warning'))
-            <div class="alert alert-danger alert-dismissible show fade">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true"> <span>&times;</span> </button>
-                <h5><i class="icon fas fa-ban"></i> </h5>
-                {{session('warning')}}
-            </div>
-        @endif
         <div class="booking p-5">
             <div class="row g-5 align-items-center">
                 <div class="col-md-6 text-white">

@@ -40,6 +40,6 @@ class BookController
 
         Book::create($request->all());
 
-        return redirect()->route('index')->with('success', 'Message Sent Successfully!');
+        return redirect()->route('index')->with('success', 'Buyurtmangi muvaffaqiyatli yuborildi!');
     }
 }
